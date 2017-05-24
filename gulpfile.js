@@ -13,7 +13,7 @@ gulp.task('browser-sync', ['sass'], function() {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('css/style.scss')
+    return gulp.src('css/style.sass')
                 .pipe(sass())
                 .pipe(autoprefixer())
                 .pipe(gulp.dest('css'))
@@ -21,6 +21,6 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', ['browser-sync'], function () {
-    gulp.watch("css/*.scss", ['sass']);
+    gulp.watch("css/*.sass", ['sass']);
     gulp.watch("*.html").on('change', bs.reload);
 });
