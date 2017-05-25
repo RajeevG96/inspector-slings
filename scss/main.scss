@@ -1,0 +1,59 @@
+//Bootstrap SASS template
+
+
+//Base styles (Vars,Mixins,etc)
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+
+//Modules styles (Individual site components)
+
+@import 'modules/_typography.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_components.scss';
+
+//Layout styles (Layout styles)
+
+@import 'layout/_nav.scss';
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+
+//Use import files to clean up code later on
+
+//VARS (These are actually stored in scss/base/_variables.scss)
+
+//$dblue: #001947;
+//$lblue: #333366;
+//$yellow: #fff200;
+
+//mixins
+
+//resets
+
+//base
+
+body {
+	background-color: $dblue;
+}
+
+p,a,li{
+	color: #fff;
+}
+
+//Hero/body
+
+.hero{
+	img{
+		border: 4px solid #fff;
+    margin-left: 9%;
+    width: 81%;
+    height: auto;
+		&:hover{
+			border: 4px solid $yellow;
+		}
+	}
+}

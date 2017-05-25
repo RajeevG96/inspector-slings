@@ -1,0 +1,74 @@
+//Navigation Styles
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+	color: #fff;
+	background-color: $dblue;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+	color: #fff;
+}
+
+.navbar-nav > li > a:hover {
+	background-color: #fff;
+}
+
+
+.dropdown-menu{
+	background-color: $dblue;
+	color: #fff;
+	li{
+		a{
+			color: #fff;
+			&:hover{
+				background-color: #fff;
+			} 
+		}
+	}
+}
+
+.navbar-default {
+	background-color: $dblue;
+	border: none;
+	color: white;
+	margin-top: 5%;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: none;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.navbar-brand {
+	img{
+		width: 79%;
+  	height: auto;
+  	position: relative;
+  	top: -63px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	//nav
+
+.navbar-brand{
+	padding-top: 0;
+	padding-left: 30px;
+	img{
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: 0;
+	}
+}
+
+.header-info{
+	width: 30%;
+	margin-left: 70%;
+	text-align: right;
+}
+
+}
