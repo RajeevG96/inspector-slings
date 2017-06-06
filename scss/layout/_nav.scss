@@ -54,7 +54,11 @@
 @media (min-width: 992px) {
 	//nav
 
-.navbar-brand{
+	.navbar-default{
+		padding: 0 16%;
+	}
+	
+	.navbar-brand{
 	padding-top: 0;
 	padding-left: 30px;
 	img{

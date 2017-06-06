@@ -36,6 +36,8 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .navbar-default {
+    padding: 0 16%; }
   .navbar-brand {
     padding-top: 0;
     padding-left: 30px; }
@@ -50,15 +52,125 @@
     text-align: right; } }
 
 body {
-  background-color: #001947; }
+  background-color: #001947;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 p, a, li {
-  color: #fff; }
+  color: #fff;
+  font-size: 1.3em; }
 
-.hero img {
-  border: 4px solid #fff;
-  margin-left: 9%;
-  width: 81%;
-  height: auto; }
-  .hero img:hover {
-    border: 4px solid #fff200; }
+h1, h2, h3, h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 2em; }
+
+hr {
+  border-color: #fff200;
+  margin-top: 0; }
+
+.hero {
+  border: 6px solid #fff200;
+  border-radius: 2%;
+  padding: 0; }
+  .hero img {
+    width: 100%;
+    height: auto; }
+
+.intro-text {
+  background: #2d396c;
+  margin: auto; }
+  .intro-text h1 {
+    color: #fff; }
+  .intro-text p {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-top: 3%;
+    text-align: left; }
+
+.services {
+  padding: 4% 0; }
+  .services h1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 10% 0;
+    font-size: 2em; }
+  .services h3 {
+    text-align: center;
+    width: 78%;
+    margin: auto; }
+  .services div {
+    background-color: #333366;
+    padding: 1% 1%;
+    margin: 4% 4%;
+    border-radius: 2%; }
+  .services p {
+    margin-top: 0;
+    font-weight: 100; }
+  .services hr {
+    margin: 6% 0;
+    border-color: yellow; }
+
+.feature {
+  padding: 4% 0; }
+  .feature div {
+    padding: 1% 1%;
+    margin: 4% auto;
+    border-radius: 2%;
+    width: 80%; }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+p {
+  font-weight: 100;
+  text-align: center;
+  margin-top: 10%; }
+
+.contact {
+  text-align: center; }
+  .contact img {
+    width: 100%;
+    height: auto; }
+
+.contact > * {
+  padding: 2% 0;
+  max-width: 500px;
+  margin: auto; }
+  .contact > *:nth-child(5) {
+    font-size: 1.3em; }
+
+@media (min-width: 400px) {
+  body {
+    padding-top: 10%; }
+  .services {
+    /* padding: 4% 0; */
+    width: 80%;
+    margin: 0 auto; }
+  .feature div {
+    margin: 1% auto; }
+    .feature div p {
+      width: 80%;
+      margin: auto; }
+  .feature {
+    padding: 0% 0; } }
+
+@media (min-width: 692px) {
+  .header-info p {
+    margin-top: 0;
+    width: 39%;
+    margin-left: 61%;
+    text-align: right; }
+  .navbar-brand img {
+    top: -44px; }
+  .intro-text h1 {
+    margin-top: 3%; }
+  .intro-text p {
+    margin-bottom: 3%; }
+  .services h1 {
+    padding: 3% 0; }
+  .services {
+    width: 100%; }
+  .feature {
+    margin-left: 17%; } }
